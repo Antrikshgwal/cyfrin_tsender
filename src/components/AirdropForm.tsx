@@ -43,11 +43,6 @@ const [amountsInput, setAmountsInput] = useState(() => localStorage.getItem("amo
         functionName: 'balanceOf',
         args:[account.address]
       },
-      {
-        abi : erc20Abi,
-        address : tokenAddress as `0x${string}`,
-        functionName: 'currency'
-      },
 
     ]
   })
@@ -195,6 +190,7 @@ setTxState("success");
     }
     } catch (err) {
       console.error("Error during submission:", err);
+      alert("Transaction failed")
       setTxState("failed");
       setLoading(false);
     } finally {
@@ -210,7 +206,7 @@ setTxState("success");
       wallet: "Confirm in wallet...",
       pending: "Submitting transaction...",
       success: "Transfer",
-      failed: "❌ Failed, try again",
+      failed: "Transfer",
     }[txState];
 
     return (
@@ -309,7 +305,11 @@ setTxState("success");
           </div>
         <div className="flex justify-between ">
             <p className="text-sm text-black">Amount(tokens)</p>
-            <p className="text-sm font-semibold text-black">{(totalAmount/10**(tokendata?.[0].result as number)) as number }</p>
+            <p className="text-sm font-semibold text-black">{
+               tokendata?.[0].result !== undefined ?
+                Number(totalAmount) / 10 ** Number(tokendata[0].result)
+               : "0"
+                }</p>
           </div>
           <div className="flex justify-between ">
             <p className="text-sm text-black">Recipients</p>
