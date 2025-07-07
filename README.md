@@ -3,7 +3,7 @@
 
 TSender is a powerful dApp that lets you send ERC-20 tokens to **multiple addresses at once** — fast, efficient, and gas-optimized. Perfect for airdrops, payouts, or distributions.
 
-![screenshot](./preview.png)
+![screenshot](![alt text](image.png))
 
 ---
 
@@ -19,7 +19,7 @@ TSender is a powerful dApp that lets you send ERC-20 tokens to **multiple addres
 
 ### 🖼 Demo
 
-[Live Demo Link](https://your-deployment-url.vercel.app)
+[Live Demo Link](https://cyfrin-tsender.vercel.app/)
 
 ---
 
@@ -131,7 +131,7 @@ function distributeERC20(
 
 **Antriksh Gwal**
 🔗 [GitHub](https://github.com/antrikshgwal)
-🐦 [Twitter](https://twitter.com/antrikshgwal)
+🐦 [Twitter](https://x.com/Warmonger85)
 
 ---
 
