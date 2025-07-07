@@ -3,7 +3,7 @@
 
 TSender is a powerful dApp that lets you send ERC-20 tokens to **multiple addresses at once** — fast, efficient, and gas-optimized. Perfect for airdrops, payouts, or distributions.
 
-![screenshot](![alt text](image.png))
+(![alt text](image.png))
 
 ---
 
